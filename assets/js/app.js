@@ -30,13 +30,17 @@ $(".list-container").on("click", ".delete", function(event) {
 //Adding new Todo
 $(".add-todo").keypress(function(event) {
   if (event.which === 13) {
-    var newTodo = $(this).val();
-    $(this).val("");
-    $(".list-container").append(
-      '<li class = "list"><span class = "delete"><img src="./assets/icons/trash-can.svg" alt="trash-can" /> </span><div class = "text">' +
-        newTodo +
-        "</div></li> "
-    ); //append() will append new todo list to the existing ul container
+    if ($(this).val() === "") {
+      return;
+    } else {
+      var newTodo = $(this).val();
+      $(this).val("");
+      $(".list-container").append(
+        '<li class = "list"><span class = "delete"><img src="./assets/icons/trash-can.svg" alt="trash-can" /> </span><div class = "text">' +
+          newTodo +
+          "</div></li> "
+      ); //append() will append new todo list to the existing ul containe
+    }
   }
 });
 

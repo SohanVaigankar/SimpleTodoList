@@ -9,21 +9,16 @@ html {
 }
 
 body {
-  width: 100vw;
   position: relative;
   background: white;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
-  margin-top: 25vh;
-  margin-bottom: 10vh;
-  margin-left: 50vw;
-  margin-right: 50vw;
+  margin: 8vh auto;
   width: 40rem;
   font-size: 1.8rem;
   font-weight: 400;
-  transform: translate(-50%, -50%);
   background-color: #f7f7f7;
   box-shadow: 0 0 0.3rem rgb(0, 0, 0, 0.1);
 }
