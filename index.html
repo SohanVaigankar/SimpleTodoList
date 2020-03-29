@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="todo">
+        <img
+          class="todo-logo"
+          src="./assets/icons/todo-logo.svg"
+          alt="To-do list Logo"
+        />
+        TO-DO List
+        <img
+          class="add-todo-logo"
+          src="./assets/icons/add.svg"
+          alt="add new todo"
+        />
+      </h1>
+
+      <input class="add-todo" type="text" placeholder=" Insert new Todo here" />
+      <ul class="list-container">
+        <li class="list">
+          <span class="delete"
+            ><img src="./assets/icons/trash-can.svg" alt="trash-can" />
+          </span>
+          <div class="text">list 1</div>
+        </li>
+      </ul>
+    </div>
+    <script src="./assets/js/lib/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
